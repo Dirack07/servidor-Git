@@ -28,7 +28,10 @@ git-server> sudo apt-get install openssh-server
 ## Create Git user
 
 ```bash
+# Add new user
 git-server>  sudo adduser git
+
+# Test newly created user
 git-server>  su - git
 ```
 
@@ -36,6 +39,10 @@ git-server>  su - git
 
 ```bash
 localbox> ssh git@git-server
+
+
+# Exit SSH session
+git@git-server> exit
 ```
 
 
@@ -43,11 +50,11 @@ localbox> ssh git@git-server
 
 ### Create a new SSH key
 
-``
+```bash
 localbox> ssh-keygen
+
 # Share your public key with the Git server admin
 localbox> scp ~/.ssh/your_new_key.pub git@git-server:/home/git
-
 ```
 
 ### Add authorized keys
