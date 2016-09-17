@@ -67,7 +67,7 @@ git@git-server> mkdir ~/.ssh
 git@git-server> touch ~/.ssh/authorized_keys
 
 
-git@git-server> cat prueba_git_rsa.pub  >> ~/.ssh/authorized_keys 
+git@git-server> cat your_new_key.pub  >> ~/.ssh/authorized_keys 
 ```
 
 ## Test Git commands
