@@ -73,5 +73,16 @@ git@git-server> cat your_new_key.pub  >> ~/.ssh/authorized_keys
 ## Test Git commands
 
 ```bash
+# Create directory for new project
+git@git-server> mkdir proj1.git
+
+# Initialize bare Git repo
+git@git-server> cd proj1.git
+git@git-server> git init --bare
+
+# Share the repo URL with the developers
+# Example URL: git@git-server:/home/git/proj1.git
+
+# The devs can clone the new repo
 localbox> git clone git@git-server:/home/git/proj1.git
 ```
